@@ -1,0 +1,645 @@
+/* use of same font family in page */
+html {
+  font-family: "manoj", sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+
+}
+
+/* changing the default margin,padding and box-sizing */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+/* declaring variable using -- to consider a common color in different section */
+:root {
+  --main-color: rgba(94, 8, 147, 0.858);
+  --use-color: #f0f0f0;
+}
+
+/* impoting fonts for website */
+@font-face {
+  font-family: "manoj";
+  src: url("./resources/Rubik_Doodle_Shadow.zip");
+}
+
+/* styling for navigation bar */
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  height: 80px;
+  gap: 20px;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  box-shadow: 0px 2px rgb(23, 22, 22);
+  position: fixed;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.menu {
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#nav {
+  display: flex;
+}
+
+.menu li {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.menu a:hover {
+  color: #48cf0ed3;
+}
+
+
+.menu a:active {
+  color: white;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/* styling for search button in navigation */
+.searchbtn {
+  border-radius: 8px;
+  padding-left: 8px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.searchbtn:hover {
+  scale: 1.02;
+}
+
+.searchlogo {
+  margin-top: 4px;
+}
+
+/* styling for shop button at navigation bar */
+
+.shopBtn {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  height: 60%;
+  width: 120px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bolder;
+  background-color: rgba(94, 8, 147, 0.858);
+  transition: all 0.5s ease-out 0.2ms;
+
+}
+
+.shopBtn:hover {
+  color: rgba(94, 8, 147, 0.858);
+  background-color: white;
+  scale: 1.1;
+
+
+}
+
+.btn-shopbtn {
+  text-decoration: none;
+
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+/* navigation section end */
+
+/* styling for main section and it's content */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 720px;
+  width: 100%;
+  border: 2px solid antiquewhite;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  box-shadow: 0px 5px 20px gray;
+  padding-top: 40px;
+  margin-top: 50px;
+  border-radius: 20px;
+
+}
+
+.mainContainer {
+  background-image: url('./images/fullyTransparent.png'), url('./images/backgroundImagemain.png'), linear-gradient(to left, white, rgb(235, 214, 187));
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 100%, 50%;
+  background-position: left bottom, right bottom;
+}
+
+.PrinterImg {
+  margin-top: -5px;
+}
+
+.forWidth {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagename {
+  display: flex;
+
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+  margin-left: 10px;
+  text-shadow: 2px 2px 8px purple;
+}
+
+
+
+.content::before {
+  content: "a better way to print";
+  position: absolute;
+  opacity: 0.8;
+  font-size: 25px;
+  left: 70px;
+  top: 10px;
+  color: rgb(15, 14, 16);
+  font-weight: bold;
+  text-transform: capitalize;
+  border-bottom: 2px solid rgba(118, 100, 67, 0.769);
+  font-family: manoj;
+
+}
+
+.content {
+  font-family: manoj;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.bigger {
+  font-size: 170px;
+  font-family: manoj;
+  color: rgb(77, 6, 176);
+
+  text-shadow: 0px 0px 10px rgb(75, 13, 130);
+
+}
+
+.middle {
+  color: rgb(98, 17, 109);
+
+}
+
+.shift {
+  text-align: justify;
+  width: 40%;
+
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.center {
+  width: 100%;
+}
+
+.Slogan {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+
+}
+
+/* styling for buttons in image section and it's content */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+
+  width: 100%;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+
+  color: white;
+  font-weight: bolder;
+  background-color: rgba(94, 8, 147, 0.858);
+  transition: all 0.5s ease-out 0.2ms;
+
+}
+
+.button:hover {
+  color: rgba(94, 8, 147, 0.858);
+  background-color: white;
+  scale: 1.1;
+}
+
+/* main section end  */
+
+/* styling for carts */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  border: 7px solid antiquewhite;
+  background-image: linear-gradient(to right, #c1baba, antiquewhite);
+  padding: 20px;
+}
+
+.cart3 {
+  margin-top: 5px;
+}
+
+.cart {
+  border: 3px solid rgb(75, 95, 4);
+  text-align: center;
+  text-transform: uppercase;
+  width: 290px;
+  aspect-ratio: 1;
+  padding: 10px;
+  color: rgb(71, 59, 59);
+  box-shadow: 10px 5px 1px rgb(2, 29, 70);
+  transition: all 0.4s linear;
+  border-radius: 10px;
+  animation: func 2s ease-out infinite alternate;
+}
+
+
+.cart:hover {
+scale: 1.02;
+}
+
+/* animator for trending */
+.animatorTrending {
+  animation: func 2.5s linear 0s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  width: 240px;
+  height: 50px;
+  box-shadow: 2px 2px 2px rgb(34, 4, 61);
+  color: #f0f0f0;
+
+}
+
+/* for trending */
+.trendingContent {
+  /* border:4px solid #1a0000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+/* styling of products */
+.products {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, antiquewhite, rgb(232, 230, 226));
+}
+
+/* styling for division carts */
+.carts {
+  width: 400px;
+  aspect-ratio: 1;
+  background-color: rgb(223, 222, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: black;
+}
+/* styling for each carts */
+.inCart {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 10px 2px 10px rgb(248, 247, 247);
+  padding: 10px;
+  background-color: rgb(200, 200, 200);
+
+}
+
+.trending-products {
+  margin-top: 30px;
+  box-shadow: 0 0 20px grey;
+  background-image: linear-gradient(to right, antiquewhite, rgb(255, 255, 255));
+
+}
+
+/* styling for contact us */
+
+.lastContainer {
+  width: 100%;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #c1baba, antiquewhite);
+  color: black;
+}
+
+.maincontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 40px;
+  margin-top: 40px;
+
+
+}
+
+.maincontact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+.form input {
+  padding: 7px;
+  border-radius: 20px;
+
+}
+
+#contactSubmit {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  background-color: var(--main-color);
+  color: var(--use-color);
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+
+}
+
+#contactSubmit:hover {
+  scale: 1.2;
+  color: var(--main-color);
+  background-color: var(--use-color);
+
+
+}
+
+#textarea {
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.carts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease-out;
+}
+
+.carts:hover {
+  scale: 1.13;
+}
+
+.carts img {
+  height: 260px;
+  width: 300px;
+
+}
+
+.cartsBold {
+  font-weight: 900;
+}
+
+/* carts section end */
+
+/* styling for map */
+.mainMap {
+border-radius: 50px;
+}
+
+.tableLast {
+  background-image: linear-gradient(to right, antiquewhite, #c1baba);
+  box-shadow: 0px 0px 10px rgb(174, 170, 160);
+  border-radius: 50px;
+  display: flex;
+
+}
+
+.tableLast td {
+  box-shadow: 10px 10px 10px rgb(152, 151, 149);
+  border-radius: 60px;
+
+}
+/* styling for introduction section of each page */
+.introductory-Section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  height: 1000px;
+  width: 300px;
+}
+
+.short-intro {
+display: none;
+}
+
+.introductory-Section li {
+  font-size: 30px;
+}
+
+.block {
+  width: 300px;
+  height: 100px;
+  display: block;
+
+}
+
+.none {
+  display: none;
+}
+
+.firstTd {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+
+.secondTd {
+  width: 100px;
+  display: flex;
+}
+
+.moreProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainButton {
+  height: 50px;
+  background-color: blueviolet;
+  width: 290px;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+  box-shadow: 5px 5px 2px rgb(120, 119, 117);
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  margin-top: -20px;
+  padding: 10px;
+  animation: func 2s linear infinite alternate;
+}
+
+.mainButton:hover {
+  background-color: #fffbfb;
+  color: blueviolet;
+}
+
+/* footer  start */
+
+.footer {
+  border-top: 5px gray;
+  background-image: linear-gradient(to right, #c2abdf, antiquewhite);
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 0 10px grey;
+  position: relative;
+}
+
+#lastSection {
+  margin-top: 20px;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.facebook-footer {
+  height: 35px;
+}
+
+.instagram-footer {
+  height: 35px;
+}
+
+.utube-footer {
+  height: 35px;
+}
+
+.footer-last {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.footer-last a {
+  text-decoration: none;
+  color: rgb(98, 85, 139);
+}
+
+.copyright-Section {
+
+
+  position: absolute;
+  left: 37%;
+  bottom: 15px;
+
+}
+
+.footer-section {
+  position: relative;
+
+}
+
+.footer-first {
+  position: absolute;
+  left: 30px;
+}
+
+.footer-third {
+  position: absolute;
+  right: 30px;
+  color: rgb(98, 85, 139);
+  text-align: left;
+
+}
+
+.topbtn img {
+  rotate: -90deg;
+  width: 40px;
+  height: 50px;
+
+}
+
+.topbtn:hover {
+  scale: 1.03;
+
+
+
+}
+
+/* footer end */

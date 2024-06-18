@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="./../style.css">
+  
+    <style>
+      *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* It removes the blue color and underline from the link */
+        a{
+            text-decoration: none;
+        }
+        .background{
+            padding-top: 95px;
+            background: rgb(255, 255, 201);
+            height: 3900px;
+            background-image: linear-gradient(to right,#c1baba,antiquewhite);
+        }
+
+        /* It gives background color of the header sections of every class named divisions */
+        .divisions h2{
+            padding: 15px;
+            background-color: rgba(227, 211, 255, 0.915);
+        }
+
+        /* It splits the span section into parts as flex to images*/
+        .divisions span{
+            display: flex;
+        }
+        .divisions span img{
+            margin: 5px;
+            margin-top: 10px;
+            width: 800px;
+            height: 400px;
+            border: 5px solid rgb(192, 192, 226);
+            border-radius: 16px;
+        }
+        .divisions span img:hover{
+            border: 5px solid rgba(151, 90, 255, 0.915);
+            cursor: pointer;
+        }
+        .divisions p{
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 15px;
+            text-align: justify; 
+        }
+        .divisions p a{
+            padding: 5px;
+            border: 3px solid rgba(227, 211, 255, 0.915);
+            border-radius: 20px;
+        }
+        .divisions p a:hover{
+            border: 3px solid rgba(93, 0, 255, 0.915);
+        }
+        /* It changes style of border of the anchor tag when clicked */
+        .divisions p a:active{
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <!-- navbar-logo section start -->
+            <div class="imagename">
+              <img src="mainlogo2.png" alt="The printer palace logo" width="55px" />
+              <p>The Printer Palace</p>
+            </div>
+            <!-- navbar-logo section end -->
+            <!-- navbar menu section start -->
+      
+            <nav id="nav">
+              <!-- inline2 -->
+              <ul style="list-style-type: none" class="menu">
+                <li class="nav-btn"><a href="./../index.html" class="nav-btn">Home</a></li>
+                <li class="nav-btn"><a href="./../productsFiles/product.html" class="nav-btn">Products</a></li>
+                <li class="nav-btn"><a href="#" class="nav-btn">Research</a></li>
+                <li class="nav-btn"><a href="./../Blog/blog2.html" class="nav-btn">blog</a></li>
+                <li class="nav-btn"><a href="./../about-usFiles/about.html" class="nav-btn">About us</a></li>
+                
+                <!-- search button section start -->
+                <li class="searc">
+                  <form action="" class="search">
+                    <label for="searchhere">
+                      <img src="searchicon.svg" alt="" class="searchlogo" /></label>
+                    <input type="text" placeholder="Search Here..." class="searchbtn" id="searchhere" />
+                    <!-- search button section end -->
+                  </form>
+                </li>
+              </ul>
+            </nav>
+            <!-- navbar menu section end -->
+            <!-- shop button section start -->
+            <div class="btn">
+              <a href="./html files/productsFiles/product.html" class="btn-shopbtn"><button class="shopBtn"><img
+                    src="shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="shop logo">Shop
+                  Now</button></a>
+                  <!-- shop button section end -->
+            </div>
+            <!--navbar logos section start -->
+            <section class="logos">
+              <a href="https://facebook.com" target="_blank" title="facebook.com"><img src="facebook.svg"
+                  alt="facebook logo" class="facebook" /> </a><a href="https://instagram.com" target="_blank"
+                title="instagram.com">
+                <img src="instagram.svg" alt="instagram logo" class="insta" /> </a><a href="https://youtube.com"
+                target="_blank" title="youtube.con">
+                <img src="youtube.svg" alt="youtube logo" class="utube" /></a>
+            </section>
+            <!-- navbar logos section end -->
+          </div>
+    </div>
+   <div class="background">
+      <!-- Divisions with different id contains everything for each topic -->
+        <div class="divisions" id="1">
+            <h2 style="text-align: center;">
+                Navigation bar
+            </h2>
+            <!-- Defines a section for any element -->
+            <span>
+                <img src="navBar1.png" alt="'our' image" style="width: 700px;">
+                <img src="navBar2.png" alt="https://joecoffeecompany.com/">
+            </span>
+            <!-- &ltNAV&gt denotes <NAV> 
+              i.e. &lt: <
+              and, &gt: >  
+            -->
+            <p>
+                For the navigation bar, we really thought of a clean navigation bar with simple color shades. After observing different websites, the JoeCoffee website got to be the most similar one among the others. So, we utilized some tags for navigation bar: <br>&ltnav&gt for a section for containing navigating elements<br>&ltul&gt for creating an unordered list <br> &ltli&gt for listing elements <br> &ltimg&gt for image of logo. <br> <br> You can visit their official website: 
+                <a href="https://joecoffeecompany.com/">Click here</a>
+            </p>
+        </div>
+        <!-- It is for Trending Products section -->
+        <div class="divisions" id="2">
+            <h2 style="text-align: center;">
+                Trending Products
+            </h2>
+            <span>
+                <img src="trendingProducts2.png" alt="'our' image">
+                <img src="trendingProducts.png" alt="https://www.tinyorganics.com/">
+            </span>
+            <p>
+                It had underline on cursor: pointer, but we took inspiration and added hover effect while cursor: pointer.
+                We loved the concept of presenting best selling products to the customers, which psychologically helps in alternating customers preferences on products, so we added the trending products section (inspired) for choices to be altered.
+                <br> So, inspired tags are: <br> &ltbold&gt for making text bolder <br> &ltimg&gt for inserting image <br> &lth1&gt for biggest heading<br><br>You can visit their official website: 
+                <a href="https://www.tinyorganics.com/">Click here</a>
+            </p>
+        </div>
+        <!-- It is for About Us section -->
+        <div class="divisions" id="3">
+            <h2 style="text-align: center;">
+                About Us
+            </h2>
+            <span>
+                <img src="aboutUs1.png" alt="'our' image"  style="width: 700px;">
+                <img src="aboutUs2.png" alt="https://apptopia.com/about-us?google_analytics_client_id=GA1.2.465549840.1705388009&google_analytics_client_id=GA1.2.1154439376.1705399553"> 
+            </span>
+            <p>
+                We found it very simple as well as professional for any section like 'About Us'. Each section was divided into different divisions: image section, Name text section, description section, and also for the small horizontal underline section. Hence, we created different cards of divisions for each members for their image, Name, and description. <br>
+                And the tags that we got inspired are: <br> &ltdiv&gt for creating a division <br> &ltimg&gt for inserting image <br> &ltsection&gt for defining a section <br> &ltbold&gt for making text bold <br><br>You can visit their official website: <a href="https://apptopia.com/about-us?google_analytics_client_id=GA1.2.465549840.1705388009&google_analytics_client_id=GA1.2.1154439376.1705399553">Click here</a>
+            </p>
+        </div>
+        <!-- It is about Contact Us section -->
+        <div class="divisions" id="4">
+            <h2 style="text-align: center;">
+                Contact Us
+            </h2>
+            <span>
+                <img src="contactUs1.png" alt="'our' image">
+                <img src="contactUs2.png" alt="https://apptopia.com/about-us?google_analytics_client_id=GA1.2.465549840.1705388009&google_analytics_client_id=GA1.2.1154439376.1705399553">
+            </span>
+            <p>
+                We found it very simple and unique for a section like 'Contact Us'. It included form for collecting inputs from the user. Each section was divided into different divisions: form section, contacts section, and map section. <br>
+                The tags we utilized are:<br> &ltform&gt for collecting data from user<br> &ltdiv&gt for defining a division<br> &ltimg&gt for inserting image<br> &ltbutton&gt for creating a button<br> &ltinput&gt for creating a field for input <br><br>
+                You can visit their official website: 
+                <a href="https://apptopia.com/about-us?google_analytics_client_id=GA1.2.465549840.1705388009&google_analytics_client_id=GA1.2.1154439376.1705399553">Click here</a>
+            </p>
+            </p>
+        </div>
+        <!-- It is for Slider section -->
+        <div class="divisions" id="5">
+            <h2 style="text-align: center;">
+                Slider
+            </h2>
+            <span>
+                <img src="slider1.png" alt="'our' image" style="width: 700px;">
+                <img src="slider2.png" alt="https://www.daraz.com.np/#">
+                
+            </span>
+            <p>
+                As we are the users of Daraz e-commerce website, we tended to observe the offer section (also known as slider) and find it catchy to a customer like us. So, we took inspiration and tried our best to meet our requirements. The tags inspired are: <br> &ltimg&gt for inserting image <br> &ltbutton&gt for creating a button <br> Also, we utilized the javascript that we learned from our course (lecture slides), for selection of images and shuffle them. <br><br> You can visit their official website: 
+                <a href="https://www.daraz.com.np/#">Click here</a>
+            </p>
+        </div>
+        <!-- It is for footer section -->
+        <footer>
+            <div class="footer">
+              <div id="lastSection">
+                <legend> <section class="logos footer-logos">
+                  <a href="https://facebook.com" target="_blank" title="facebook.com"><img src="facebook.svg"
+                      alt="https://fontawesome.com/search?q=facebook&o=r" class=" facebook facebook-footer" />
+                    <a href="https://instagram.com" target="_blank" title="instagram.com">
+                      <img src="instagram.svg" alt="https://fontawesome.com/search?q=instagram&o=r"
+                        class="instagram instagram-footer" />
+                      <a href="https://youtube.com" target="_blank" title="youtube.con">
+                        <img src="youtube.svg" alt="https://fontawesome.com/search?q=youtube&o=r"
+                          class="utube utube-footer" />
+                        </section>
+                </legend>
+              </div>
+              <div class="footer-section">
+                <div class="footer-first footer-last">
+                  <div class="footer-email">
+                    <h2>contact us at:-</h2>
+                    <a href="mail-to:Printerpalace123@gmail.com">Email:-Printerpalace123@gmail.com</a>
+                  </div>
+                  <div class="footer-phn">
+                    <a href="tel:+9779812345678">Phone:- +9779812345678</a>
+                  </div>
+                </div>
+                <div class="footer-third footer-last">
+                  <h3>our services:-</h3>
+                  <ul>
+                    <li> Service less</li>
+                    <li> Service less</li>
+                    <li> Service less</li>
+                  </ul>
+                </div>
+        
+              </div>
+              <div class="copyright-Section">
+                <!-- &copy; gives copyright symbol -->
+                <pre><p>&copy;<a href="#" title="all right reserves to the printer palace team">ThePrinterPalace</a> | <a href="#">Privacy&Security</a></p></pre>
+              </div>
+        
+            </div>
+        </footer>
+   </div>
+</body>
+</html>

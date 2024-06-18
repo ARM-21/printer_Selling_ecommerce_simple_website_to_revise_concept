@@ -1,0 +1,86 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+   
+}
+.products{
+    padding-top:20px;
+    background-image: linear-gradient(to right,#c1baba,antiquewhite);
+}
+/* styling for add to cart button */
+.addToCart{
+width:250px;
+height:30px;
+border-radius: 10px;
+color:floralwhite;
+background-color: firebrick;
+transition: all 0.5s linear;
+}
+.addToCart:hover{
+    cursor: pointer;
+    background-color: floralwhite;
+    color:firebrick;
+}
+.carts{
+    width:423px;
+    transition: all 1s ease-out;
+}
+.inCart{
+    background-color:rgb(187, 186, 186);
+}
+
+.carts:hover{
+    scale:1.03;
+}
+.advertisement-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top:90px;
+    background-image: linear-gradient(to right,#c1baba,antiquewhite);
+}
+#image{
+    border-radius:30px ;
+    }
+
+.advertisement{
+    height:500px;
+    width:70%;
+    background-image: url('./../images/background_images/background0.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:95% 95%;
+    padding:20px;
+      box-shadow: 0px 0px 20px grey;
+      border-radius: 20px;
+      position: relative;
+      
+}
+.Arrow{
+    cursor: pointer;
+   
+   
+}
+
+.Arrow-forward{
+    position: absolute;
+    right:-35px;
+    top:40%;
+    width:70px;
+    aspect-ratio: 1;
+    background-color: antiquewhite;
+    border-radius: 50%;
+
+}
+.Arrow-back{
+    position:absolute ;
+ 
+  width:70px;
+  left:-35px;
+    top:40%;
+    aspect-ratio: 1;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}

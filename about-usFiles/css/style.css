@@ -1,0 +1,199 @@
+/* resetting default margin ,padding,and box-sizing for all elements*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+/*smooth scrolling behaviour with scroll-padding for html */
+html{
+    scroll-behavior: smooth;
+   
+}
+/*styling body ,setting background color*/
+body{
+    background-image:linear-gradient(to right, #c1baba, antiquewhite);
+  
+}
+/*styling for the main heading section*/
+.heading{
+    width: 80%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    margin:90px auto;
+}
+/* styling for the main heading text*/
+.heading h1{
+    font-size: 70px;
+    color: darkmagenta;
+    margin-bottom: 40px;
+    position: relative;
+}
+/*styling for a line below the main heading text*/
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(147, 207, 44);
+}
+/* Styling for the main content container */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+/* Styling for the about section */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Styling for the about section image container */
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+/* Styling for images within the about section */
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Styling for the about section content container */
+.about-content{
+    flex:1;
+}
+/* Styling for heading in the about section */
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: rgb(2, 117, 2);
+}
+/* Styling for paragraphs in the about section */
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+   text-align: justify;
+
+}
+/* Styling for the second heading in the team section */
+.heading2 h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:purple;
+    margin-bottom: 40px;
+    text-align: center
+}
+/* Styling for the team section */
+.team{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+}
+/* Styling for individual team member cards */
+.card{
+    width: 225px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 10;
+    transition: all 0.9s ease-out;
+}
+/* Styling for image and content within a card */
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+/* Styling for image container within a card */
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+/* Styling for an overlay on the image container */
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(53, 9, 61);
+    border-radius: 25px 25px 0 25px;
+}
+/* Styling for additional overlay elements */
+.overlay::before,
+.overlay::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:rgb(53, 9, 61);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+/* Styling for the card image container */
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    
+}
+/* Styling for the image within the card */
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(73, 237, 84);
+}
+/* Styling for the name within a card */
+.name{
+  font-size: 18px;
+  font-weight: bolder;
+  color:rgb(88, 21, 88);  
+}
+/* Styling for skills within a card */
+.skills{
+    font-size:16px ;
+    font-weight: 450;
+    color: rgb(138, 5, 138);
+}
+/* Styling for description within a card */
+.description{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+/* Styling for card hover effect */
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    z-index: 2;
+    
+
+}

@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to right,antiquewhite,rgb(255, 255, 255)); 
+    font-family:Arial;/*change text inside body to arial */
+}
+/*change text inside heading h1 to orange and center alligned*/
+.heading{
+    margin-top:70px;
+}
+.content .heading h1{
+    text-align: center;
+    color: rgb(172, 82, 197);
+    font-size:100px;
+    font-family: cursive;
+}
+.content .heading p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    font-size: px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content1 .intro h2{
+font-size: 40px;
+font-family:sans-serif;
+text-align: center;
+text-decoration: underline;
+}
+.introduction{
+    display: flex;
+    height:auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+       
+}
+
+.content1 img{
+    height:400px; /* set height of image to 250px*/
+    width:500px;
+    
+}
+
+/* change text inside h2 to black and to center aligned*/
+
+/*change text inside p to black,justify aligned and set padding to 3px*/
+.content1 {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    padding: 45px;
+    background-color:white;
+    width: 80%;
+    height:650px;
+    margin: 60px auto 0 auto;
+    box-shadow: 5px 5px 21px black;
+    border:1px solid black;
+    justify-content: space-between;
+ 
+}
+p{
+    font-size: 20px;
+    width:500px;
+    text-align: justify;
+    padding:20px;
+}
+
+
+.content2{
+    background-color:white;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    width: 80%;
+    height: 650px;
+    margin: 60px auto 0 auto;
+    border:1px solid black;
+    font-size: 20px;
+   box-shadow: 5px 5px 21px black;
+   
+}
+.content2 .posimp h2{
+    font-size: 40px;
+    font-family:sans-serif;
+    text-align: center;
+    text-decoration: underline; 
+}
+
+.content2 img{
+    height:400px; /* set height of image to 250px*/
+    width:500px;
+}
+/*change text inside h2 to black ,underline and center aligned*/
+/*change text inside p to black,justify aligned and set padding to 3px*/
+.content3{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    height: 650px;
+    width: 80%;
+    margin: 60px auto 0 auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 21px black;
+}
+.content3 .negimp h2{
+    font-size: 40px;
+    font-family:sans-serif;
+    text-align: center;
+    text-decoration: underline; 
+}
+.content3 img{
+    height:400px; /* set height of image to 250px*/
+    width:500px;
+}
+/*change text inside h2 to black ,underline and center aligned*/
+/*change text inside p to black,justify aligned and set padding to 3px*/
+.content4{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    height: 650px;
+    margin: 60px auto 0 auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 21px black;
+}
+.content4 .impbuss h2{
+    font-size: 40px;
+    font-family:sans-serif;
+    text-align: center;
+    text-decoration: underline; 
+}
+.content4 img{
+    height:400px; /* set height of image to 250px*/
+    width:500px;
+}
+.content5{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    height: 650px;
+    margin: 60px auto 0 auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 21px black;
+}
+.content5 .conc h2{
+    font-size: 40px;
+    font-family:sans-serif;
+    text-align: center;
+    text-decoration: underline;    
+}
+.content5 img{
+    height:400px; /* set height of image to 250px*/
+    width:500px;   
+}
+/*change text inside h2 to black ,underline and center aligned*/
