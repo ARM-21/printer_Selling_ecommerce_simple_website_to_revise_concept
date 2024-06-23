@@ -39,7 +39,7 @@ text-decoration: underline;
 
 .content1 img{
     height:400px; /* set height of image to 250px*/
-    width:500px;
+    max-width:500px;
     
 }
 
@@ -53,7 +53,7 @@ text-decoration: underline;
     padding: 45px;
     background-color:white;
     width: 80%;
-    height:650px;
+    max-height:650px;
     margin: 60px auto 0 auto;
     box-shadow: 5px 5px 21px black;
     border:1px solid black;
@@ -62,7 +62,7 @@ text-decoration: underline;
 }
 p{
     font-size: 20px;
-    width:500px;
+    max-width:700px;
     text-align: justify;
     padding:20px;
 }
@@ -75,7 +75,6 @@ p{
     justify-content: space-between;
     padding: 45px;
     width: 80%;
-    height: 650px;
     margin: 60px auto 0 auto;
     border:1px solid black;
     font-size: 20px;
@@ -90,8 +89,8 @@ p{
 }
 
 .content2 img{
-    height:400px; /* set height of image to 250px*/
-    width:500px;
+    max-height:400px; /* set height of image to 250px*/
+    max-width:500px;
 }
 /*change text inside h2 to black ,underline and center aligned*/
 /*change text inside p to black,justify aligned and set padding to 3px*/
@@ -114,7 +113,7 @@ p{
 }
 .content3 img{
     height:400px; /* set height of image to 250px*/
-    width:500px;
+    max-width:500px;
 }
 /*change text inside h2 to black ,underline and center aligned*/
 /*change text inside p to black,justify aligned and set padding to 3px*/
@@ -137,7 +136,7 @@ p{
 }
 .content4 img{
     height:400px; /* set height of image to 250px*/
-    width:500px;
+    max-width:500px;
 }
 .content5{
     background-color:white;
@@ -145,7 +144,7 @@ p{
     justify-content: space-between;
     padding: 40px;
     width: 80%;
-    height: 650px;
+    /* height: 650px; */
     margin: 60px auto 0 auto;
     border: 1px solid black;
     box-shadow: 5px 5px 21px black;
@@ -157,7 +156,20 @@ p{
     text-decoration: underline;    
 }
 .content5 img{
-    height:400px; /* set height of image to 250px*/
-    width:500px;   
+    max-height:400px; /* set height of image to 250px*/
+    max-width:500px;   
+    /* margin-bottom: 50px; */
 }
 /*change text inside h2 to black ,underline and center aligned*/
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1700px;
+    max-height: 1000px;
+    /* height: 700px; */
+    gap:10px;
+    /* overflow: hidden; */
+    
+}

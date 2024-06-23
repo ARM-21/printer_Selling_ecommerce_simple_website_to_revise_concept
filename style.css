@@ -31,11 +31,12 @@ html {
 .navbar {
   display: flex;
   width: 100%;
+  max-width: 1900px;
   align-items: center;
   background-color: #f0f0f0;
   border-radius: 20px;
   height: 80px;
-  gap: 20px;
+  gap: 12px;
   justify-content: space-around;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
@@ -97,8 +98,8 @@ ul a {
   display: flex;
   align-items: center;
   font-size: medium;
-  height: 60%;
-  width: 120px;
+  /* height: 60%; */
+  max-width: 140px;
   border-radius: 15px;
   color: white;
   font-weight: bolder;
@@ -120,6 +121,12 @@ ul a {
 
 }
 
+.navbar .logos {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .logos {
   display: flex;
   gap: 20px;
@@ -234,6 +241,7 @@ ul a {
 
 .center {
   width: 100%;
+  max-width: 2000px;
 }
 
 .Slogan {
@@ -404,7 +412,7 @@ display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 400px;
+  max-width: 400px;
 }
 
 .form input {
@@ -437,8 +445,8 @@ display: flex;
 }
 
 #textarea {
-  padding-left: 20px;
-  font-size: 20px;
+  padding-left: 5px;
+  font-size: 10px;
   border-radius: 10px;
 }
 
@@ -470,6 +478,7 @@ display: flex;
 /* styling for map */
 .mainMap {
 border-radius: 50px;
+object-fit: cover;
 }
 
 .tableLast {
@@ -491,8 +500,8 @@ border-radius: 50px;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  height: 1000px;
-  width: 300px;
+  height: 5rem;
+  max-width: 400px;
 }
 
 .short-intro {
@@ -517,11 +526,11 @@ display: none;
 .firstTd {
   display: flex;
   justify-content: center;
-  width: 600px;
+  max-width: 600px;
 }
 
 .secondTd {
-  width: 100px;
+  max-width: 100px;
   display: flex;
 }
 
@@ -532,9 +541,9 @@ display: none;
 }
 
 .mainButton {
-  height: 50px;
+  /* height: 50px; */
   background-color: blueviolet;
-  width: 290px;
+  max-width: 290px;
   border-radius: 20px;
   transition: all 0.5s ease-out;
   box-shadow: 5px 5px 2px rgb(120, 119, 117);

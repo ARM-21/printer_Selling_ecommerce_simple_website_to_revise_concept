@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research</title>
     <link rel="stylesheet" href="./../style.css">
   
@@ -16,10 +15,14 @@
         a{
             text-decoration: none;
         }
+        .background-whole{
+            background: rgb(255, 255, 201);
+            background-image: linear-gradient(to right,#c1baba,antiquewhite);
+        }
         .background{
             padding-top: 95px;
             background: rgb(255, 255, 201);
-            height: 3900px;
+            max-height: 3900px;
             background-image: linear-gradient(to right,#c1baba,antiquewhite);
         }
 
@@ -32,11 +35,17 @@
         /* It splits the span section into parts as flex to images*/
         .divisions span{
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 255, 201);
+            background-image: linear-gradient(to right,#c1baba,antiquewhite);
         }
         .divisions span img{
             margin: 5px;
             margin-top: 10px;
-            width: 800px;
+            flex: 1;
+            max-width: 700px;
             height: 400px;
             border: 5px solid rgb(192, 192, 226);
             border-radius: 16px;
@@ -46,11 +55,13 @@
             cursor: pointer;
         }
         .divisions p{
-            padding: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
+          padding: 40px;
             margin-bottom: 15px;
             text-align: justify; 
+            background: rgb(255, 255, 201);
+            background-image: linear-gradient(to right,#c1baba,antiquewhite);
+            line-height: 1.2;
+
         }
         .divisions p a{
             padding: 5px;
@@ -67,7 +78,7 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="background-WHole">
         <div class="navbar">
             <!-- navbar-logo section start -->
             <div class="imagename">
@@ -125,7 +136,7 @@
             </h2>
             <!-- Defines a section for any element -->
             <span>
-                <img src="navBar1.png" alt="'our' image" style="width: 700px;">
+                <img src="navBar1.png" alt="'our' image" style="max-width: 700px;">
                 <img src="navBar2.png" alt="https://joecoffeecompany.com/">
             </span>
             <!-- &ltNAV&gt denotes <NAV> 
@@ -159,7 +170,7 @@
                 About Us
             </h2>
             <span>
-                <img src="aboutUs1.png" alt="'our' image"  style="width: 700px;">
+                <img src="aboutUs1.png" alt="'our' image"  style="max-width: 700px;">
                 <img src="aboutUs2.png" alt="https://apptopia.com/about-us?google_analytics_client_id=GA1.2.465549840.1705388009&google_analytics_client_id=GA1.2.1154439376.1705399553"> 
             </span>
             <p>
@@ -190,7 +201,7 @@
                 Slider
             </h2>
             <span>
-                <img src="slider1.png" alt="'our' image" style="width: 700px;">
+                <img src="slider1.png" alt="'our' image" style="max-width: 700px;">
                 <img src="slider2.png" alt="https://www.daraz.com.np/#">
                 
             </span>

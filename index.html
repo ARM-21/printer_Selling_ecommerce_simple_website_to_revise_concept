@@ -7,6 +7,12 @@
 
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=3.0"> -->
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7"> -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
 
 </head>
 
@@ -226,7 +232,7 @@
   <!-- starting of form and introductory and map section -->
   <div class="lastContainer">
     <!-- giving the layout using table tag -->
-    <table border="2" width="80%" class="tableLast" style="border-spacing: 90px;">
+    <table border="2" max-width="80%" class="tableLast" style="border-spacing: 90px;">
       <!-- start of table -->
 
       <tbody>
@@ -252,7 +258,7 @@
             </fieldset>
             </form>
           </td>
-          <td rowspan="2" align="center" style="width:500px;">
+          <td rowspan="1">
             <!-- introductory section which contains introduction of each page -->
             <div class="introductory-Section">
 
@@ -292,7 +298,7 @@
       <fieldset>
         <legend>Location:</legend>
         <!-- div to hold image of map -->
-        <div class="mainMap"><img src="./images/map.png" alt="mapImage" width="600px" height="400px"></div>
+        <div class="mainMap"><img src="./images/map.png" alt="mapImage" max-width="1000px" height="300px"></div>
       </fieldset>
     </td>
   </tr>
@@ -388,7 +394,7 @@
     buttonTop.addEventListener('click', toTop(toTopbtn))
     // end
   </script>
-  <script src="script.js"></script>
+  
 </body>
 
 </html>
